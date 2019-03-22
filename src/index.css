@@ -1,0 +1,67 @@
+body {
+font: 14px "Century Gothic", Futura, sans-serif;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+margin: 20px;
+background-image: url("https://stmed.net/sites/default/files/super-mario-bros.-hd-wallpapers-33719-8891797.jpg");
+
+}
+ol, ul {
+  padding-left: 30px;
+
+}
+
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+
+}
+
+.status {
+  margin-bottom: 10px;
+}
+
+.square {
+  background: #41d1ea;
+  color: white;
+
+  border: 3px solid white;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 8rem;
+  margin-right: 25px;
+  margin-top: 25px;
+
+  text-align: center;
+  width: 8rem;
+  border-radius: 41.5%;
+}
+
+.square:focus {
+  outline: none;
+}
+.possition{
+  padding-right: 100px;
+
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.game-info {
+  margin-left: 20px;
+  padding-left: 10em;
+}

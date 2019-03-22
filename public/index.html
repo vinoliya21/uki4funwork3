@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>TicTacToe</title>
+    <style media="screen">
+    .possition{
+      padding-right: 100px;
+
+    }
+    #startmsg {
+ display: none;
+    }
+#player {
+  display: none;
+  color: white;
+}
+#root{
+  display: none;
+}
+#id{
+  color: white;
+}
+    </style>
+  </head>
+  <body>
+    <div id="id">
+    <left><h1>herzlich willkommen zu TicTacToe</h1></left>
+</div><br>
+
+    <div>
+      <div id="id"><h2>Players</h2></div>
+    <form class="" action="index.html" method="post">
+      <input id="player1" type="text" name="" placeholder="player1" >
+        <input id="player2" type="text" name="" placeholder="player2" >
+        <button type="button"class=" btn-primary" onClick="showPlayer()"  name="button">Start</button>
+
+    </form><br>
+    <div id="formmsg">
+      <div id="id"><p>Enter player names</p></div>
+    </div>
+    <div id="startmsg">
+      <p>Click blue button and start play the game</p>
+    </div><br><br>
+
+  <div id="player">
+
+  </div>
+
+
+  </div>
+
+
+
+    <div class="possition" id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+
+  </body>
+  <script type="text/javascript">
+  function showPlayer() {
+      document.getElementById('player').style.display = 'inline';
+      showGame();
+      this.jumpTo(0)
+
+
+
+  }
+  function showGame() {
+    document.getElementById('root').style.display = 'inline';
+  formMsg();
+
+
+  }
+  function formMsg() {
+    document.getElementById('formmsg').style.display = 'none';
+
+
+  }
+  function startMsg() {
+
+  }
+
+  </script>
+</html>
